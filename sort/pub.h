@@ -4,6 +4,7 @@ int swap(int *a, int *b);
 int bubble_sort(int arr[], int len);
 int select_sort(int arr[], int len);
 int insert_sort(int arr[], int len);
+int print_swap_count(void);
 
 typedef int (*sort) (int arr[], int len);
 struct function {

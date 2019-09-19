@@ -34,7 +34,6 @@ void print_func()
 
 int main(int argc, char *argv[])
 {
-	printf("%s num\n", argv[0]);
 	print_func();
 	int i = 1;
 	while(i < argc) {
@@ -52,6 +51,7 @@ int main(int argc, char *argv[])
 	if (func) {
 		print_arr(arr, len);
 		func(arr, len);
+		print_swap_count();
 		print_arr(arr, len);
 	}
 	return 0;
