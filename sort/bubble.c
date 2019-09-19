@@ -1,15 +1,16 @@
 #include "pub.h"
+int cmp_count;
 int bubble_sort(int arr[], int len)
 {
 	printf("bubble sort start\n");
 	int flag = 0;
-	for (int i = 0; i < len; i++) {
+	for (int i = len - 1; i > 0; i--) {
 		/* all data should compare */
 		flag = 0;
-		for (int j = 0; j < len - i -1; j++) {
+		for (int j = 0; j < i; j++) {
 			/* j+1 already part into compare */
 			/* every time reduce one ,reduce i */
-			if (arr[j] > arr[j+1]) {
+			if ((arr[j] > arr[j+1]) && cmp_count++) {
 				swap(&arr[j], &arr[j+1]);
 				flag = 1;
 			}
