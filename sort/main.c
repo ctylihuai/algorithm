@@ -5,12 +5,14 @@
 int arr[20] = {3,5,3,6,2,3,4,7,8,9,
 				12, 13, 15, 2, 34,
 				32, 456, 32,432 ,11};
-
+int tmp[20] = {0};
 struct function sort_f[10] = {
 	"bubble", bubble_sort,
 	"select", select_sort,
 	"insert", insert_sort,
 	"shell", shell_sort,
+	"merge", merge_sort,
+	"quick", quick_sort,
 };
 int cmp_count = 0;
 int swap_count = 0;
