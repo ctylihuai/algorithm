@@ -13,6 +13,7 @@ struct function sort_f[10] = {
 	"shell", shell_sort,
 	"merge", merge_sort,
 	"quick", quick_sort,
+	"heap", heap_sort,
 };
 int cmp_count = 0;
 int swap_count = 0;

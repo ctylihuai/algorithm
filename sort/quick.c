@@ -7,11 +7,9 @@ int partition(int arr[], int left, int right)
 			right--;
 		while(arr[left] <= arr[pivot] && left < right)
 			left++;
-		if (left < right) {
-			swap(&arr[left], &arr[right]);
-		}
+		(left < right) && swap(&arr[left], &arr[right]);
 	}
-	swap(&arr[pivot],&arr[left]);
+	(pivot != left) && swap(&arr[pivot],&arr[left]);
 	return left;
 }
 int quick(int arr[], int left, int right)

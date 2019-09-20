@@ -7,6 +7,7 @@ int insert_sort(int arr[], int len);
 int shell_sort(int arr[], int len);
 int merge_sort(int arr[], int len);
 int quick_sort(int arr[], int len);
+int heap_sort(int arr[], int len);
 
 int print_swap_count(void);
 
