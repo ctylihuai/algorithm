@@ -6,3 +6,5 @@ $(target):$(obj)
 	$(CC) $(obj) -o $(target)
 clean:
 	rm *.o -rf
+	
+	
